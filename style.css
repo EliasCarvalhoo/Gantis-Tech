@@ -35,14 +35,18 @@
 #menu-container {
     display: flex;
     justify-content: space-around;
+    /* width: 100%; */
     padding: 0.7rem;
     font-size: 1.2rem;
-    background-color: #f3f1f1;
+    background-color: #fffffd;
     border-bottom: 0.1rem solid var(--roxo-color);
     box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.363);
     position: relative;
+    align-items: center;
     
 }
+
+
 
 .logo { 
     display: flex;
@@ -62,6 +66,8 @@
     align-items: center;
     font-family: var(--font-primary);
     font-size: 1rem;
+    width: 34rem;
+    /* border: 1px solid black; */
 }
 
 .menu ul{
@@ -570,4 +576,61 @@ footer a:hover {
     text-decoration-color: rgba(255, 255, 255, 0.664);
     color: #259dd9;
     transition: ease 0.5s;
+}
+
+
+/* REPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 769px) {
+     
+    #menu-container {
+        padding: 0;
+        width: 100vw;
+
+    }
+    
+    .menu li {
+        list-style-type: none;
+        padding: 0.3rem 0;
+
+    }
+
+    .conteudo-menu {
+        width: 5rem;
+        background-color: red;
+        
+        
+    }
+    
+
+    /* SECAO 03 */
+
+    .caixa-secao03 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 800px;
+        height: 250px;
+        padding: 2rem 3rem;
+        margin-bottom: 2.5rem;
+        gap: 7rem;
+        /* border: 1px solid rgba(68, 0, 255, 0.925); */
+    }
+
+    
+}
+
+
+
+
+@media (max-width: 481px ) {
+    body h1, body h2, body h3, body h4 {
+        font-size: 8rem;
+        color: rgb(255, 0, 106);
+        border-bottom: 1px solid black ;
+    }
+
 }
